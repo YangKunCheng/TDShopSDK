@@ -8,9 +8,8 @@
 
 Pod::Spec.new do |spec|
 
-
   spec.name         = "TDShopSDK"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.3"
   spec.summary      = "A short description of TDShopSDK."
 
   spec.description  = <<-DESC 
@@ -18,7 +17,6 @@ Pod::Spec.new do |spec|
                    DESC
 
   spec.homepage     = "https://github.com/YangKunCheng/TDShopSDK.git"
-  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
