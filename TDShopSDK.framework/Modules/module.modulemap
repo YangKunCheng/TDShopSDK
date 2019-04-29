@@ -1,0 +1,11 @@
+framework module TDShopSDK {
+  umbrella header "TDShopSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module TDShopSDK.Swift {
+    header "TDShopSDK-Swift.h"
+    requires objc
+}
