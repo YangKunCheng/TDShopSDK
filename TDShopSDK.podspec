@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 				test
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/TDShop_Base"
+  spec.homepage     = "https://github.com/YangKunCheng/TDShopSDK.git"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -98,11 +98,12 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  spec.frameworks = "Base", "Hybrid"
+  #spec.frameworks = "Base", "Hybrid"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
 
+  spec.vendored_frameworks = "frameworks/*.frameworks"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -110,11 +111,13 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+  spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" } 
-  spec.vendored_frameworks = 'Base.framework'
+
+  
   spec.swift_version = '5.0'
+
   spec.dependency 'Alamofire', '~> 4.8.0'
   spec.dependency 'YYModel', '~> 1.0.4'
   spec.dependency 'SDWebImage', '~> 5.0'
