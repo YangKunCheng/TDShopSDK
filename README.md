@@ -36,7 +36,18 @@ func application(_ app: UIApplication, open url: URL, options: [UIApplication.Op
 ```
 #### Step3 Use DemoLink for Test【使用测试链接进行测试】
 
-’tdshop://mytdshop.net/195221EF4498F6F0E1CC10C852843F2643C4168F181E443552C442C50939A437‘
+`tdshop://mytdshop.net/195221EF4498F6F0E1CC10C852843F2643C4168F181E443552C442C50939A437`
+
+SDK will open a ViewController witch show the google page , if success!
+
+### 3.TDIconView 
+#### TDIconView need a aspect ratio ()【使用测试链接进行测试】
+```
+let iconView = TDIconView.init(frame: CGRect.init(x: (UIScreen.main.bounds.size.width - 50)/2, y: 150 + 20, width: 50, height: 50))
+self.view.addSubview(iconView)
+```
+        
+    
 
 
 
