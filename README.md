@@ -13,6 +13,12 @@ From CocoaPods【使用CocoaPods】
 
 ### 1.Initialization SDK【初始化SDK】
 
+`let config = TDConfig.config(appkey: "your appKey") { (isInitSuccess,errMsg) in
+}
+ config.isDebug = true
+        
+ TDShopSDK.sdkInitialize(config: config)
+`
 
 
 
