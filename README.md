@@ -41,11 +41,29 @@ func application(_ app: UIApplication, open url: URL, options: [UIApplication.Op
 SDK will open a ViewController witch show the google page , if success!
 
 ### 3.TDIconView 
-#### TDIconView need a aspect ratio ()【使用测试链接进行测试】
+#### TDIconView need a  Appropriate ratio (width:height 1:1)【TDIconView 需要一个合适的宽高比（宽：高 1:1）】
 ```
-let iconView = TDIconView.init(frame: CGRect.init(x: (UIScreen.main.bounds.size.width - 50)/2, y: 150 + 20, width: 50, height: 50))
+let WH:CGFloat = 100
+let iconView = TDIconView.init(frame: CGRect.init(x: 0, y: 0, width: WH, height: WH))
 self.view.addSubview(iconView)
 ```
+
+### 4.TDBannerView 
+#### TDBannerView need a  Appropriate ratio (width:height 720:372)【TDBannerView 需要一个合适的宽高比（宽：高 720:372）】
+```
+let W:CGFloat = 300
+let H:CGFloat = W * 372/720.0
+let iconView = TDIconView.init(frame: CGRect.init(x: 0, y: 0, width: W, height: H))
+self.view.addSubview(iconView)
+```
+
+### 5.Show Interstitial 【弹出插屏广告】
+
+```
+TDShopSDK.showInterstitialView()
+
+```
+
         
     
 
