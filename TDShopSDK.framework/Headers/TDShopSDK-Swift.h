@@ -191,6 +191,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC9TDShopSDK12TDBannerView")
 @interface TDBannerView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+/// Only one init method.You can certainly use autolayout after init.
+/// \param frame View’s aspect ratios has strict restrictions，Please see our GitHub’s document.
+///
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -207,6 +210,9 @@ SWIFT_CLASS("_TtC9TDShopSDK8TDConfig")
 SWIFT_CLASS("_TtC9TDShopSDK10TDIconView")
 @interface TDIconView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+/// Only one init method. You can certainly use autolayout after init.
+/// \param frame View’s aspect ratios has strict restrictions，Please see our GitHub’s document.
+///
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
 

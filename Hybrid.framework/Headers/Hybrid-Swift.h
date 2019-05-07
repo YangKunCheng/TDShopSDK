@@ -202,7 +202,7 @@ SWIFT_CLASS("_TtC6Hybrid17HybridWebViewCore")
 @interface HybridWebViewCore : UIWebView <UIWebViewDelegate, SonicSessionDelegate>
 - (void)session:(SonicSession * _Null_unspecified)session requireWebViewReload:(NSURLRequest * _Null_unspecified)request;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (BOOL)webView:(UIWebView * _Nonnull)webView shouldStartLoadWithRequest:(NSURLRequest * _Nonnull)request navigationType:(enum UIWebViewNavigationType)navigationType SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)webView:(UIWebView * _Nonnull)webView shouldStartLoadWithRequest:(NSURLRequest * _Nonnull)request navigationType:(UIWebViewNavigationType)navigationType SWIFT_WARN_UNUSED_RESULT;
 - (void)webViewDidStartLoad:(UIWebView * _Nonnull)webView;
 - (void)webViewDidFinishLoad:(UIWebView * _Nonnull)webView;
 - (void)webView:(UIWebView * _Nonnull)webView didFailLoadWithError:(NSError * _Nonnull)error;
