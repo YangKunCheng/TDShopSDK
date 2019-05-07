@@ -47,6 +47,13 @@ let WH:CGFloat = 100
 let iconView = TDIconView.init(frame: CGRect.init(x: 0, y: 0, width: WH, height: WH))
 self.view.addSubview(iconView)
 ```
+#### Add the following code in viewWillAppear
+```
+override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.iconView.handleWhenViewAppear()
+}
+```
 
 ### 4.TDBannerView 
 #### TDBannerView need a  Appropriate ratio (width:height 720:372)
@@ -55,6 +62,13 @@ let W:CGFloat = 300
 let H:CGFloat = W * 372/720.0
 let iconView = TDIconView.init(frame: CGRect.init(x: 0, y: 0, width: W, height: H))
 self.view.addSubview(iconView)
+```
+#### Add the following code in viewWillAppear
+```
+override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.bannerView.handleWhenViewAppear()
+}
 ```
 
 ### 5.Show Interstitial 
@@ -112,6 +126,13 @@ let WH:CGFloat = 100
 let iconView = TDIconView.init(frame: CGRect.init(x: 0, y: 0, width: WH, height: WH))
 self.view.addSubview(iconView)
 ```
+#### 在viewWillAppear方法里添加如下代码
+```
+override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.iconView.handleWhenViewAppear()
+}
+```
   
 ### 4.TDBannerView 
 #### TDBannerView 需要一个合适的宽高比（宽：高 720:372）
@@ -120,6 +141,13 @@ let W:CGFloat = 300
 let H:CGFloat = W * 372/720.0
 let iconView = TDIconView.init(frame: CGRect.init(x: 0, y: 0, width: W, height: H))
 self.view.addSubview(iconView)
+```
+#### 在viewWillAppear方法里添加如下代码
+```
+override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.bannerView.handleWhenViewAppear()
+}
 ```
   
 ### 5.弹出插屏广告
