@@ -86,7 +86,7 @@ TDShopSDK.sdkInitialize(config: config)
   
 ### 2.深层链接
   
-#### 第一步： 将TDShopSDK的scheme加入到Info.plist文件】
+#### 第一步： 将TDShopSDK的scheme加入到Info.plist文件
   
 scheme `tdshop`
   
