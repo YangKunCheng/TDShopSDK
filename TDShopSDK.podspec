@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TDShopSDK"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "A short description of TDShopSDK."
 
   spec.description  = <<-DESC 
@@ -96,7 +96,7 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  #spec.frameworks = "Base", "Hybrid"
+  #spec.frameworks = "Base", "Hybrid","VasSonic"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
@@ -104,7 +104,7 @@ Pod::Spec.new do |spec|
 
 
 
-  spec.vendored_frameworks = ['TDShopSDK.framework','Base.framework','Hybrid.framework']
+  spec.vendored_frameworks = ['TDShopSDK.framework','Base.framework','Hybrid.framework','VasSonic.framework']
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If your library depends on compiler flags you can set them in the xcconfig hash
@@ -122,7 +122,6 @@ Pod::Spec.new do |spec|
   spec.dependency 'SDWebImage', '~> 5.0'
   spec.dependency 'Bugsnag'
   spec.dependency 'ObjectMapper', '~> 3.4'
-  spec.dependency 'VasSonic', '~> 3.1.1'
   spec.dependency 'MBProgressHUD', '~> 1.1.0'
   
 
