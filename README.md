@@ -72,10 +72,66 @@ override func viewWillAppear(_ animated: Bool) {
     self.bannerView.handleWhenViewAppear()
 }
 ```
-
-### 5.Show Interstitial 
+### 5.TDCustomView 
+#### 1.create a subclass of TDCustomView.
+```
+class CustomView: TDCustomView {
+  //init
+  override init(viewId: String, tags: [String]?) {
+      super.init(viewId: viewId, tags: tags)
+   }
+   //handle click event
+   @objc func click(button:UIButton){
+        super.handleViewDidClick(button.tag)
+    }
+   func setupView(resources:[TDAdResourcesModel]) {
+        //Creat your custom view 
+   }
+}
+```
+#### 2.Get ad resources then config your custom view.
+```
+TDShopSDK.getAdResourcesInfo(placementId: "placementId", tags: ["hat"]) { (resources) in
+            
+  self.customView = CustomView.init(viewId: self.placementIdTF.text ?? "", tags: tags2)
+  self.customView?.frame = CGRect.init(x: 10, y: currY, width: UIScreen.main.bounds.size.width-20, height: 100)
+  self.customView?.setupView(resources: resources)
+  self.customView?.handleWhenViewAppear()
+  self.view.addSubview(self.customView!)
+}
+```
+#### 3.Call handleWhenViewAppear when view appear
+```
+override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.customView?.handleWhenViewAppear()
+}
 
 ```
-TDShopSDK.showInterstitialView()
+
+### 6.Config local push server.
+
+#### 第一步： register local push server
+```
+if #available(iOS 10.0, *) {
+    UNUserNotificationCenter.current().delegate = self
+}
+```
+#### 第二步： handle when recieve local push notification（SDK will push some local push notification for the right time.）
+```
+@available(iOS 10.0, *)
+func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                willPresent notification: UNNotification,
+                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void)
+{
+    if TDShopSDK.canHandleLocalPushNoti(info: notification.request.content.userInfo) {
+        completionHandler([.alert])
+    }
+}
+@available(iOS 10.0, *)
+func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+  TDShopSDK.handleLocalPushNoti(info: response.notification.request.content.userInfo)
+  completionHandler()
+}
 
 ```
