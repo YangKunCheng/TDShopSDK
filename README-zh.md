@@ -44,9 +44,9 @@ func application(_ app: UIApplication, open url: URL, options: [UIApplication.Op
   
 ### 3.TDIconView 
 #### TDIconView 需要一个合适的宽高比（宽：高 1:1）
- ```
+```
 let WH:CGFloat = 100
-let iconView = TDIconView.init(frame: CGRect.init(x: 0, y: 0, width: WH, height: WH))
+let iconView = TDIconView.init(frame: CGRect.init(x: 0, y: 0, width: WH, height: WH), viewId: "test_ios_icon_001")
 self.view.addSubview(iconView)
 ```
 #### 在viewWillAppear方法里添加如下代码
@@ -62,8 +62,8 @@ override func viewWillAppear(_ animated: Bool) {
 ```
 let W:CGFloat = 300
 let H:CGFloat = W * 372/720.0
-let iconView = TDIconView.init(frame: CGRect.init(x: 0, y: 0, width: W, height: H))
-self.view.addSubview(iconView)
+let bannerView = TDBannerView.init(frame: CGRect.init(x: 0, y: 0, width: W, height: H), viewId: "test_ios_banner_001")
+self.view.addSubview(bannerView)
 ```
 #### 在viewWillAppear方法里添加如下代码
 ```
