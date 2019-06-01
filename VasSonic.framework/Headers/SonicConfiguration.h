@@ -21,6 +21,8 @@
 
 @interface SonicConfiguration : NSObject
 
+@property (nonatomic,assign)BOOL modifyHtmlEnable;
+
 /**
  * Sever default disable sonic time duration: 6 hours.
  */

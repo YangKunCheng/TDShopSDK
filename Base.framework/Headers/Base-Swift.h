@@ -198,6 +198,12 @@ SWIFT_CLASS("_TtC4Base9SMNetwork")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC4Base10TDBaseCore")
+@interface TDBaseCore : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif

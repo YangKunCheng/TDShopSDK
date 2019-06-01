@@ -186,15 +186,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
+SWIFT_CLASS("_TtC9TDShopSDK18TDAdResourcesModel")
+@interface TDAdResourcesModel : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSCoder;
 
 SWIFT_CLASS("_TtC9TDShopSDK12TDBannerView")
 @interface TDBannerView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-/// Only one init method.You can certainly use autolayout after init.
-/// \param frame View’s aspect ratios has strict restrictions，Please see our GitHub’s document.
-///
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 
@@ -205,13 +208,17 @@ SWIFT_CLASS("_TtC9TDShopSDK8TDConfig")
 @end
 
 
+SWIFT_CLASS("_TtC9TDShopSDK12TDCustomView")
+@interface TDCustomView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC9TDShopSDK10TDIconView")
 @interface TDIconView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-/// Only one init method. You can certainly use autolayout after init.
-/// \param frame View’s aspect ratios has strict restrictions，Please see our GitHub’s document.
-///
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 
