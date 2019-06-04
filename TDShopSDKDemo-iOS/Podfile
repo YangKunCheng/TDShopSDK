@@ -1,0 +1,15 @@
+use_frameworks!
+
+
+platform :ios, '10.0'
+
+
+target 'TDShopSDKDemo-iOS' do
+ pod 'TDShopSDK'
+ pod 'SnapKit', '~> 5.0.0'
+project 'TDShopSDKDemo-iOS.xcodeproj'
+  
+end
+
+
+

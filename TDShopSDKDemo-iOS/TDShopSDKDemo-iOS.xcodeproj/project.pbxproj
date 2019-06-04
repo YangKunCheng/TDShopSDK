@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042BC1EC22A25AA500F28645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BC1EB22A25AA500F28645 /* AppDelegate.swift */; };
+		042BC1EE22A25AA500F28645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BC1ED22A25AA500F28645 /* ViewController.swift */; };
+		042BC1F122A25AA500F28645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042BC1EF22A25AA500F28645 /* Main.storyboard */; };
+		042BC1F322A25AA700F28645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042BC1F222A25AA700F28645 /* Assets.xcassets */; };
+		042BC1F622A25AA700F28645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042BC1F422A25AA700F28645 /* LaunchScreen.storyboard */; };
+		042BC1FE22A25AEA00F28645 /* TDShopSDKDemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BC1FD22A25AEA00F28645 /* TDShopSDKDemoListVC.swift */; };
+		042BC20022A27AE900F28645 /* TDIconViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BC1FF22A27AE900F28645 /* TDIconViewDemoVC.swift */; };
+		042BC20222A27AFD00F28645 /* TDBannerViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BC20122A27AFD00F28645 /* TDBannerViewDemoVC.swift */; };
+		042BC20422A27B0C00F28645 /* TDCustomViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BC20322A27B0C00F28645 /* TDCustomViewDemo.swift */; };
+		DA6DDE3267FF75CE9156C7E0 /* Pods_TDShopSDKDemo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438F1F7E3B012B7C014D0A98 /* Pods_TDShopSDKDemo_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		042BC1E822A25AA500F28645 /* TDShopSDKDemo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TDShopSDKDemo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		042BC1EB22A25AA500F28645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		042BC1ED22A25AA500F28645 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		042BC1F022A25AA500F28645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		042BC1F222A25AA700F28645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		042BC1F522A25AA700F28645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		042BC1F722A25AA700F28645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042BC1FD22A25AEA00F28645 /* TDShopSDKDemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDShopSDKDemoListVC.swift; sourceTree = "<group>"; };
+		042BC1FF22A27AE900F28645 /* TDIconViewDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDIconViewDemoVC.swift; sourceTree = "<group>"; };
+		042BC20122A27AFD00F28645 /* TDBannerViewDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBannerViewDemoVC.swift; sourceTree = "<group>"; };
+		042BC20322A27B0C00F28645 /* TDCustomViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDCustomViewDemo.swift; sourceTree = "<group>"; };
+		12FE0B433297C9A1DEA1F0FF /* Pods-TDShopSDKDemo-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDShopSDKDemo-iOS.release.xcconfig"; path = "Target Support Files/Pods-TDShopSDKDemo-iOS/Pods-TDShopSDKDemo-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		438F1F7E3B012B7C014D0A98 /* Pods_TDShopSDKDemo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDShopSDKDemo_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C5152F59FCA33C378EF25E /* Pods-TDShopSDKDemo-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDShopSDKDemo-iOS.debug.xcconfig"; path = "Target Support Files/Pods-TDShopSDKDemo-iOS/Pods-TDShopSDKDemo-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		042BC1E522A25AA500F28645 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6DDE3267FF75CE9156C7E0 /* Pods_TDShopSDKDemo_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		042BC1DF22A25AA500F28645 = {
+			isa = PBXGroup;
+			children = (
+				042BC1EA22A25AA500F28645 /* TDShopSDKDemo-iOS */,
+				042BC1E922A25AA500F28645 /* Products */,
+				CAFC901129BAE671A9B29B63 /* Pods */,
+				62BC80128634FB96051519D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		042BC1E922A25AA500F28645 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				042BC1E822A25AA500F28645 /* TDShopSDKDemo-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		042BC1EA22A25AA500F28645 /* TDShopSDKDemo-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				042BC1EB22A25AA500F28645 /* AppDelegate.swift */,
+				042BC1ED22A25AA500F28645 /* ViewController.swift */,
+				042BC1FD22A25AEA00F28645 /* TDShopSDKDemoListVC.swift */,
+				042BC1FF22A27AE900F28645 /* TDIconViewDemoVC.swift */,
+				042BC20122A27AFD00F28645 /* TDBannerViewDemoVC.swift */,
+				042BC20322A27B0C00F28645 /* TDCustomViewDemo.swift */,
+				042BC1EF22A25AA500F28645 /* Main.storyboard */,
+				042BC1F222A25AA700F28645 /* Assets.xcassets */,
+				042BC1F422A25AA700F28645 /* LaunchScreen.storyboard */,
+				042BC1F722A25AA700F28645 /* Info.plist */,
+			);
+			path = "TDShopSDKDemo-iOS";
+			sourceTree = "<group>";
+		};
+		62BC80128634FB96051519D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438F1F7E3B012B7C014D0A98 /* Pods_TDShopSDKDemo_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAFC901129BAE671A9B29B63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8C5152F59FCA33C378EF25E /* Pods-TDShopSDKDemo-iOS.debug.xcconfig */,
+				12FE0B433297C9A1DEA1F0FF /* Pods-TDShopSDKDemo-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		042BC1E722A25AA500F28645 /* TDShopSDKDemo-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042BC1FA22A25AA700F28645 /* Build configuration list for PBXNativeTarget "TDShopSDKDemo-iOS" */;
+			buildPhases = (
+				E7D1158C2EF663520721C105 /* [CP] Check Pods Manifest.lock */,
+				042BC1E422A25AA500F28645 /* Sources */,
+				042BC1E522A25AA500F28645 /* Frameworks */,
+				042BC1E622A25AA500F28645 /* Resources */,
+				3ADB6F8A9DDB7FB200ED2719 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TDShopSDKDemo-iOS";
+			productName = "TDShopSDKDemo-iOS";
+			productReference = 042BC1E822A25AA500F28645 /* TDShopSDKDemo-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		042BC1E022A25AA500F28645 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					042BC1E722A25AA500F28645 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 042BC1E322A25AA500F28645 /* Build configuration list for PBXProject "TDShopSDKDemo-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 042BC1DF22A25AA500F28645;
+			productRefGroup = 042BC1E922A25AA500F28645 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				042BC1E722A25AA500F28645 /* TDShopSDKDemo-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		042BC1E622A25AA500F28645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042BC1F622A25AA700F28645 /* LaunchScreen.storyboard in Resources */,
+				042BC1F322A25AA700F28645 /* Assets.xcassets in Resources */,
+				042BC1F122A25AA500F28645 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3ADB6F8A9DDB7FB200ED2719 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TDShopSDKDemo-iOS/Pods-TDShopSDKDemo-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bugsnag/Bugsnag.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${PODS_ROOT}/TDShopSDK/TDShopSDK.framework",
+				"${PODS_ROOT}/TDShopSDK/Base.framework",
+				"${PODS_ROOT}/TDShopSDK/Hybrid.framework",
+				"${PODS_ROOT}/TDShopSDK/VasSonic.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bugsnag.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TDShopSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Base.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hybrid.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VasSonic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TDShopSDKDemo-iOS/Pods-TDShopSDKDemo-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7D1158C2EF663520721C105 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TDShopSDKDemo-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		042BC1E422A25AA500F28645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042BC1EE22A25AA500F28645 /* ViewController.swift in Sources */,
+				042BC20222A27AFD00F28645 /* TDBannerViewDemoVC.swift in Sources */,
+				042BC20422A27B0C00F28645 /* TDCustomViewDemo.swift in Sources */,
+				042BC1EC22A25AA500F28645 /* AppDelegate.swift in Sources */,
+				042BC1FE22A25AEA00F28645 /* TDShopSDKDemoListVC.swift in Sources */,
+				042BC20022A27AE900F28645 /* TDIconViewDemoVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		042BC1EF22A25AA500F28645 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				042BC1F022A25AA500F28645 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		042BC1F422A25AA700F28645 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				042BC1F522A25AA700F28645 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		042BC1F822A25AA700F28645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		042BC1F922A25AA700F28645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		042BC1FB22A25AA700F28645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8C5152F59FCA33C378EF25E /* Pods-TDShopSDKDemo-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MX86D3GC33;
+				INFOPLIST_FILE = "TDShopSDKDemo-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.td.TDShopSDKDemo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		042BC1FC22A25AA700F28645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12FE0B433297C9A1DEA1F0FF /* Pods-TDShopSDKDemo-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MX86D3GC33;
+				INFOPLIST_FILE = "TDShopSDKDemo-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.td.TDShopSDKDemo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		042BC1E322A25AA500F28645 /* Build configuration list for PBXProject "TDShopSDKDemo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042BC1F822A25AA700F28645 /* Debug */,
+				042BC1F922A25AA700F28645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042BC1FA22A25AA700F28645 /* Build configuration list for PBXNativeTarget "TDShopSDKDemo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042BC1FB22A25AA700F28645 /* Debug */,
+				042BC1FC22A25AA700F28645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 042BC1E022A25AA500F28645 /* Project object */;
+}
