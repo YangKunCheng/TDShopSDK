@@ -44,7 +44,7 @@ class TDIconViewDemoVC: UIViewController {
         
         currY += titleLbH + space
         // Fixed Entrance
-        let fixedIconView =  TDIconView.init(frame: CGRect.init(x:(screenW-viewWH)/2, y: currY, width: viewWH, height: viewWH), viewId: "icon1")
+        let fixedIconView =  TDIconView.init(frame: CGRect.init(x:(screenW-viewWH)/2, y: currY, width: viewWH, height: viewWH), viewId: "myshop_ios_demo_icon_001")
         scrollView.addSubview(fixedIconView)
         fixedIconView.handleWhenViewAppear()
         
@@ -73,7 +73,7 @@ class TDIconViewDemoVC: UIViewController {
         scrollView.addSubview(showTempleBtn)
         currY += titleLbH + space
         
-        let templeIconView =  TDIconView.init(frame: CGRect.init(x:(screenW-viewWH)/2, y: currY, width: viewWH, height: viewWH), viewId: "icon1")
+        let templeIconView =  TDIconView.init(frame: CGRect.init(x:(screenW-viewWH)/2, y: currY, width: viewWH, height: viewWH), viewId: "myshop_ios_demo_icon_001")
         scrollView.addSubview(templeIconView)
         templeIconView.handleWhenViewAppear()
         templeIconView.isHidden = true
@@ -110,7 +110,7 @@ class TDCustomIconView: UIView {
         let closeBtnWH:CGFloat = 15
         
         let fixIconViewWH = self.bounds.size.width-closeBtnWH
-        fixedIconView =  TDIconView.init(frame: CGRect.init(x:0, y: closeBtnWH, width: fixIconViewWH, height: fixIconViewWH), viewId: "icon1")
+        fixedIconView =  TDIconView.init(frame: CGRect.init(x:0, y: closeBtnWH, width: fixIconViewWH, height: fixIconViewWH), viewId: "myshop_ios_demo_icon_001")
         addSubview(fixedIconView)
         
         let closeBtn = UIButton.init(frame: CGRect.init(x: fixIconViewWH, y: 0, width: closeBtnWH, height: closeBtnWH))

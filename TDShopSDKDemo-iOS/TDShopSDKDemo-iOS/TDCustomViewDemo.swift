@@ -17,14 +17,17 @@ class TDCustomViewDemo: UIViewController {
     }
 
     func initCustomView() {
-        view.backgroundColor = UIColor.black
-        TDShopSDK.getAdResourcesInfo(placementId: "", tags: []) { (resources) in
-            let customView = CustomView.init(viewId: "", tags: [])
+        view.backgroundColor = UIColor.white
+        let customViewLb = UILabel.init(frame: CGRect.init(x: 10, y: 155, width: 150, height: 25))
+        customViewLb.text = "Custom View:"
+        view.addSubview(customViewLb)
+        
+        let placementId = "myshop_ios_demo_tag_001"
+        let tags = ["common"]
+        TDShopSDK.getAdResourcesInfo(placementId: placementId, tags: tags) { (resources) in
+            let customView = CustomView.init(viewId: placementId, tags: tags)
             self.view.addSubview(customView)
-            customView.snp.makeConstraints({ (make) in
-                make.center.equalToSuperview()
-                make.size.equalTo(CGSize(width: UIScreen.main.bounds.size.width-20, height: 100))
-            })
+           customView.frame = CGRect.init(x: 10, y: 200, width: UIScreen.main.bounds.size.width-20, height: 100)
             customView.setupView(resources: resources)
             customView.handleWhenViewAppear()
         }
@@ -90,22 +93,10 @@ class CustomView: TDCustomView, UIScrollViewDelegate {
             imageView.clipsToBounds = true
             contentView.addSubview(imageView)
             
-            let qipaoView = UIView.init(frame: CGRect.init(x: width-120-10, y: 10, width: 120, height: 30))
-            qipaoView.backgroundColor = UIColor.red
-            qipaoView.layer.cornerRadius = 30/2.0
-            contentView.addSubview(qipaoView)
-            let contentLb = UILabel.init(frame: CGRect.init(x: 0, y: 5, width: 120, height: 20))
-            contentLb.text = adInfo.content
-            contentLb.textColor = UIColor.white
-            contentLb.font = UIFont.systemFont(ofSize: 13)
-            contentLb.textAlignment = .center
-            qipaoView.addSubview(contentLb)
-            
-            
             var tag = "Tag:"
             if let tags = self.tags {
                 for tag1 in tags {
-                    tag = tag  + tag1 + "_"
+                    tag = tag  + tag1 + " "
                 }
             }
             let label0 = UILabel.init(frame: CGRect.init(x: 0, y: height-45, width: width, height: 20))

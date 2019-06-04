@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height))
         //initialSDK
         let config = TDConfig.config(appkey: "demoMyshop") { (isInitSuccess,errMsg) in
-           
+
         }
         config.isDebug = true
         TDShopSDK.sdkInitialize(config: config)

@@ -41,7 +41,7 @@ class TDBannerViewDemoVC: UIViewController {
         
         currY += titleLbH + space
         // Fixed Entrance
-        let fixedBannerView =  TDBannerView(frame: CGRect(x: (screenW-viewW)/2, y: currY, width: viewW, height: viewH), viewId: "banner1")
+        let fixedBannerView =  TDBannerView(frame: CGRect(x: (screenW-viewW)/2, y: currY, width: viewW, height: viewH), viewId: "myshop_ios_demo_banner_001")
         scrollView.addSubview(fixedBannerView)
         fixedBannerView.handleWhenViewAppear()
         
@@ -70,7 +70,7 @@ class TDBannerViewDemoVC: UIViewController {
         scrollView.addSubview(showTempleBtn)
         currY += titleLbH + space
         
-        let templeIconView =  TDBannerView.init(frame: CGRect.init(x:(screenW-viewW)/2, y: currY, width: viewW, height: viewH), viewId: "banner1")
+        let templeIconView =  TDBannerView.init(frame: CGRect.init(x:(screenW-viewW)/2, y: currY, width: viewW, height: viewH), viewId: "myshop_ios_demo_banner_001")
         scrollView.addSubview(templeIconView)
         templeIconView.handleWhenViewAppear()
         templeIconView.isHidden = true
@@ -106,7 +106,7 @@ class TDCustomBannerView: UIView {
         let viewH:CGFloat = 50
         let viewW:CGFloat = viewH * 720.0/372
         let fixBannerViewWH = self.bounds.size.width-closeBtnWH
-        fixedBannerView =  TDBannerView(frame: CGRect(x: 0, y: closeBtnWH, width: viewW, height: viewH), viewId: "banner1")
+        fixedBannerView =  TDBannerView(frame: CGRect(x: 0, y: closeBtnWH, width: viewW, height: viewH), viewId: "myshop_ios_demo_banner_001")
         addSubview(fixedBannerView)
         
         let closeBtn = UIButton.init(frame: CGRect.init(x: fixBannerViewWH, y: 0, width: closeBtnWH, height: closeBtnWH))
