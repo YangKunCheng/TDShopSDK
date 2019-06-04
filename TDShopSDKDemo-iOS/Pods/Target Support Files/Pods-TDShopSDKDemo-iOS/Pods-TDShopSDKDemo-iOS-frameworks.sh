@@ -155,28 +155,22 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Bugsnag/Bugsnag.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${PODS_ROOT}/TDShopSDK/TDShopSDK.framework"
   install_framework "${PODS_ROOT}/TDShopSDK/Base.framework"
   install_framework "${PODS_ROOT}/TDShopSDK/Hybrid.framework"
   install_framework "${PODS_ROOT}/TDShopSDK/VasSonic.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Bugsnag/Bugsnag.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${PODS_ROOT}/TDShopSDK/TDShopSDK.framework"
   install_framework "${PODS_ROOT}/TDShopSDK/Base.framework"
   install_framework "${PODS_ROOT}/TDShopSDK/Hybrid.framework"
   install_framework "${PODS_ROOT}/TDShopSDK/VasSonic.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
