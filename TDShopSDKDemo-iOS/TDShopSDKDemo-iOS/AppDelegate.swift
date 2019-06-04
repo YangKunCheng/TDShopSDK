@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TDShopSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         self.window = UIWindow.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height))
+        //initialSDK
+        let config = TDConfig.config(appkey: "demoMyshop") { (isInitSuccess,errMsg) in
+           
+        }
+        config.isDebug = true
+        TDShopSDK.sdkInitialize(config: config)
         
         let navi = UINavigationController.init(rootViewController: TDShopSDKDemoListVC())
         self.window?.rootViewController = navi

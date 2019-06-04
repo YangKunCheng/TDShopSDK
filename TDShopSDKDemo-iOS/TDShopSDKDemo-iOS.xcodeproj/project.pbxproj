@@ -17,6 +17,7 @@
 		042BC20222A27AFD00F28645 /* TDBannerViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BC20122A27AFD00F28645 /* TDBannerViewDemoVC.swift */; };
 		042BC20422A27B0C00F28645 /* TDCustomViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BC20322A27B0C00F28645 /* TDCustomViewDemo.swift */; };
 		DA6DDE3267FF75CE9156C7E0 /* Pods_TDShopSDKDemo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438F1F7E3B012B7C014D0A98 /* Pods_TDShopSDKDemo_iOS.framework */; };
+		E12A3AEB22A655BA00044FFC /* TDInterstitialViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A3AEA22A655BA00044FFC /* TDInterstitialViewDemoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		12FE0B433297C9A1DEA1F0FF /* Pods-TDShopSDKDemo-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDShopSDKDemo-iOS.release.xcconfig"; path = "Target Support Files/Pods-TDShopSDKDemo-iOS/Pods-TDShopSDKDemo-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		438F1F7E3B012B7C014D0A98 /* Pods_TDShopSDKDemo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDShopSDKDemo_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C5152F59FCA33C378EF25E /* Pods-TDShopSDKDemo-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDShopSDKDemo-iOS.debug.xcconfig"; path = "Target Support Files/Pods-TDShopSDKDemo-iOS/Pods-TDShopSDKDemo-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E12A3AEA22A655BA00044FFC /* TDInterstitialViewDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDInterstitialViewDemoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				042BC1FF22A27AE900F28645 /* TDIconViewDemoVC.swift */,
 				042BC20122A27AFD00F28645 /* TDBannerViewDemoVC.swift */,
 				042BC20322A27B0C00F28645 /* TDCustomViewDemo.swift */,
+				E12A3AEA22A655BA00044FFC /* TDInterstitialViewDemoVC.swift */,
 				042BC1EF22A25AA500F28645 /* Main.storyboard */,
 				042BC1F222A25AA700F28645 /* Assets.xcassets */,
 				042BC1F422A25AA700F28645 /* LaunchScreen.storyboard */,
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				042BC1EE22A25AA500F28645 /* ViewController.swift in Sources */,
+				E12A3AEB22A655BA00044FFC /* TDInterstitialViewDemoVC.swift in Sources */,
 				042BC20222A27AFD00F28645 /* TDBannerViewDemoVC.swift in Sources */,
 				042BC20422A27B0C00F28645 /* TDCustomViewDemo.swift in Sources */,
 				042BC1EC22A25AA500F28645 /* AppDelegate.swift in Sources */,
@@ -393,7 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MX86D3GC33;
+				DEVELOPMENT_TEAM = 7YS5Q8GQAU;
 				INFOPLIST_FILE = "TDShopSDKDemo-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -412,7 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MX86D3GC33;
+				DEVELOPMENT_TEAM = 7YS5Q8GQAU;
 				INFOPLIST_FILE = "TDShopSDKDemo-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

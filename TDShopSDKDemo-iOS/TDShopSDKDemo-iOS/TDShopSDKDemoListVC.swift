@@ -14,7 +14,7 @@ enum TDShopSDKDemoType {
     case iconView
     case bannerView
     case customView
-    
+    case interstitialView
 }
 
 
@@ -56,7 +56,7 @@ class TDShopSDKDemoListVC: UIViewController {
         
         let dataArr:[[String:Any]] = [["type":TDShopSDKDemoType.iconView ,"title":"TDIconView","desc":"common"],
                                       ["type":TDShopSDKDemoType.bannerView ,"title":"TDBannerView","desc":"common"],
-                                      ["type":TDShopSDKDemoType.customView ,"title":"TDCustomView","desc":"common"],
+                                      ["type":TDShopSDKDemoType.customView ,"title":"TDCustomView","desc":"common"], ["type": TDShopSDKDemoType.interstitialView,"title":"TDInterstitialView","desc": "common"],
             ]
         var demoList = [TDDemoModel]()
         for demoData in dataArr {
@@ -102,7 +102,8 @@ extension TDShopSDKDemoListVC: UITableViewDelegate,UITableViewDataSource {
             vc = TDBannerViewDemoVC()
         case .customView:
             vc = TDCustomViewDemo()
-
+        case .interstitialView:
+            vc = TDInterstitialViewDemoVC()
         }
         
         if let vc1 = vc {

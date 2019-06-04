@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TDShopSDK"
-  spec.version      = "0.9.0"
+  spec.version      = "1.0.0"
   spec.summary      = "A short description of TDShopSDK."
 
   spec.description  = <<-DESC 
@@ -118,11 +118,7 @@ Pod::Spec.new do |spec|
   spec.swift_version = '5.0'
 
   spec.dependency 'Alamofire', '~> 4.8.0'
-  spec.dependency 'YYModel', '~> 1.0.4'
   spec.dependency 'SDWebImage', '~> 5.0'
   spec.dependency 'Bugsnag'
-  spec.dependency 'ObjectMapper', '~> 3.4'
-  spec.dependency 'MBProgressHUD', '~> 1.1.0'
   
-
 end
