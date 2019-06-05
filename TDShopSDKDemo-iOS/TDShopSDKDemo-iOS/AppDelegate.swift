@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //初始化SDK
         let config = TDConfig.config(appkey: "demoMyshop") { (isInitSuccess,errMsg) in
-
+            
         }
         config.isDebug = true
         TDShopSDK.sdkInitialize(config: config)

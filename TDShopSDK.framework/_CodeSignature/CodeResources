@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		WVT9zrn//yArm2CC9zJahBYKTvk=
-		</data>
 		<key>Headers/TDShopSDK-Swift.h</key>
 		<data>
-		7oT6Btip/1gjs0vfzRznWqF/soY=
+		zzKU+Ejjtndm5Mt4zsMuRovyGbY=
 		</data>
 		<key>Headers/TDShopSDK.h</key>
 		<data>
@@ -18,39 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ODSE+tD1VOsNPSFqR05i72MY9RY=
+		YoLu439o2/yWpqMSfTC9M2+GVwQ=
 		</data>
 		<key>Modules/TDShopSDK.swiftmodule/arm.swiftdoc</key>
 		<data>
-		+Spz91Jgz5Jh5xEq2fkOZaYHAJI=
+		1k6SKzUZ6O8QcRwRMNgpEJMXiOE=
 		</data>
 		<key>Modules/TDShopSDK.swiftmodule/arm.swiftmodule</key>
 		<data>
-		lOkIRDjUg5f8E8rJwLcicT40x1I=
+		3j8eZ3sfH1FIe4kQBZCbRXVhg9w=
 		</data>
 		<key>Modules/TDShopSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		4WaONlY6/VdkhGvkcHIPUKXNelE=
+		Ofmgo0hWeLIk0VjP5/bedtOpIos=
 		</data>
 		<key>Modules/TDShopSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		idU9/hbFCEwOc8xEEkzxZxCzrAQ=
-		</data>
-		<key>Modules/TDShopSDK.swiftmodule/i386.swiftdoc</key>
-		<data>
-		W01PYYJ/ezKnHvpi2DxlBuBByJo=
-		</data>
-		<key>Modules/TDShopSDK.swiftmodule/i386.swiftmodule</key>
-		<data>
-		WVMK/d2QwVIjASuMwcn2CMtZaNk=
-		</data>
-		<key>Modules/TDShopSDK.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		IDFTQJ8xZIRguwi+q/sKLvct6L4=
-		</data>
-		<key>Modules/TDShopSDK.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		9YpLAS4y24olrWbjAptbr27/BEE=
+		DZA2VExOWeXpMgwmvp0kWjPT7eU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -91,11 +71,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7oT6Btip/1gjs0vfzRznWqF/soY=
+			zzKU+Ejjtndm5Mt4zsMuRovyGbY=
 			</data>
 			<key>hash2</key>
 			<data>
-			wCqqbFRCgqmcIXdJ8p+oRJUT3vJDa1/czEsLRKmMR9A=
+			dkDji4r1+NgWZpBp/9rIJ8x3DWUYjQ0ghEj418Ix/dM=
 			</data>
 		</dict>
 		<key>Headers/TDShopSDK.h</key>
@@ -113,88 +93,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+Spz91Jgz5Jh5xEq2fkOZaYHAJI=
+			1k6SKzUZ6O8QcRwRMNgpEJMXiOE=
 			</data>
 			<key>hash2</key>
 			<data>
-			PY6LWHEcwfcvo9PVQAreXVa2DJcTNOypcVmjTIjlhJI=
+			E42Qps5n15y+WyChyZiq09WAY4s/7u70KSL7gyQQfzs=
 			</data>
 		</dict>
 		<key>Modules/TDShopSDK.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lOkIRDjUg5f8E8rJwLcicT40x1I=
+			3j8eZ3sfH1FIe4kQBZCbRXVhg9w=
 			</data>
 			<key>hash2</key>
 			<data>
-			FK0dS4QEGvvnOBzEXmbZfk26S3fEFi/eyiIob67mD4E=
+			W9e+woS/4PJx5G4mz4gLjiB7To++TDpw4ZQZBBpaZG0=
 			</data>
 		</dict>
 		<key>Modules/TDShopSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4WaONlY6/VdkhGvkcHIPUKXNelE=
+			Ofmgo0hWeLIk0VjP5/bedtOpIos=
 			</data>
 			<key>hash2</key>
 			<data>
-			39GXzvxdlqF7OTnbw9jIA48hqmg0aKl20+8fAjPfCnE=
+			Dvx6MCGT3EyXlFXkXx1G2PjdPP3brF9eaLUCiFr+Er8=
 			</data>
 		</dict>
 		<key>Modules/TDShopSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			idU9/hbFCEwOc8xEEkzxZxCzrAQ=
+			DZA2VExOWeXpMgwmvp0kWjPT7eU=
 			</data>
 			<key>hash2</key>
 			<data>
-			cIHjSfyZe4RSDwkfY7VNN1nqtiLJppnEl+0Wpz8qpIs=
-			</data>
-		</dict>
-		<key>Modules/TDShopSDK.swiftmodule/i386.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			W01PYYJ/ezKnHvpi2DxlBuBByJo=
-			</data>
-			<key>hash2</key>
-			<data>
-			X1hEzgeZcBu5G/BnBobZlyK9RIqU54Wxh6D0ZlEm6Sk=
-			</data>
-		</dict>
-		<key>Modules/TDShopSDK.swiftmodule/i386.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			WVMK/d2QwVIjASuMwcn2CMtZaNk=
-			</data>
-			<key>hash2</key>
-			<data>
-			kdJqe5nTpX5YrOqUgnFIO5XnU0SwTXAgpNTKpvfLJvY=
-			</data>
-		</dict>
-		<key>Modules/TDShopSDK.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IDFTQJ8xZIRguwi+q/sKLvct6L4=
-			</data>
-			<key>hash2</key>
-			<data>
-			lDCzzQacujApzUs2AomJtWJxLcfyM+chfBvZdkQnncw=
-			</data>
-		</dict>
-		<key>Modules/TDShopSDK.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9YpLAS4y24olrWbjAptbr27/BEE=
-			</data>
-			<key>hash2</key>
-			<data>
-			MO9XkM+zNHmmy1qJs6h7zw3lL+v5kRtwWFh8BQf4JR8=
+			GFlMcXqnSNJM4hj3zCnSclcV280GFA6oEUuhtg0KCqk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

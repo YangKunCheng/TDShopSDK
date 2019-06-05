@@ -16,6 +16,7 @@
 		042BC20022A27AE900F28645 /* TDIconViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BC1FF22A27AE900F28645 /* TDIconViewDemoVC.swift */; };
 		042BC20222A27AFD00F28645 /* TDBannerViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BC20122A27AFD00F28645 /* TDBannerViewDemoVC.swift */; };
 		042BC20422A27B0C00F28645 /* TDCustomViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BC20322A27B0C00F28645 /* TDCustomViewDemo.swift */; };
+		045FAEC522A7B9CF001F5DCE /* TDMutiCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FAEC422A7B9CF001F5DCE /* TDMutiCustomView.swift */; };
 		DA6DDE3267FF75CE9156C7E0 /* Pods_TDShopSDKDemo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438F1F7E3B012B7C014D0A98 /* Pods_TDShopSDKDemo_iOS.framework */; };
 		E12A3AEB22A655BA00044FFC /* TDInterstitialViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A3AEA22A655BA00044FFC /* TDInterstitialViewDemoVC.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		042BC1FF22A27AE900F28645 /* TDIconViewDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDIconViewDemoVC.swift; sourceTree = "<group>"; };
 		042BC20122A27AFD00F28645 /* TDBannerViewDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBannerViewDemoVC.swift; sourceTree = "<group>"; };
 		042BC20322A27B0C00F28645 /* TDCustomViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDCustomViewDemo.swift; sourceTree = "<group>"; };
+		045FAEC422A7B9CF001F5DCE /* TDMutiCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDMutiCustomView.swift; sourceTree = "<group>"; };
 		12FE0B433297C9A1DEA1F0FF /* Pods-TDShopSDKDemo-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDShopSDKDemo-iOS.release.xcconfig"; path = "Target Support Files/Pods-TDShopSDKDemo-iOS/Pods-TDShopSDKDemo-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		438F1F7E3B012B7C014D0A98 /* Pods_TDShopSDKDemo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDShopSDKDemo_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C5152F59FCA33C378EF25E /* Pods-TDShopSDKDemo-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDShopSDKDemo-iOS.debug.xcconfig"; path = "Target Support Files/Pods-TDShopSDKDemo-iOS/Pods-TDShopSDKDemo-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				042BC1FF22A27AE900F28645 /* TDIconViewDemoVC.swift */,
 				042BC20122A27AFD00F28645 /* TDBannerViewDemoVC.swift */,
 				042BC20322A27B0C00F28645 /* TDCustomViewDemo.swift */,
+				045FAEC422A7B9CF001F5DCE /* TDMutiCustomView.swift */,
 				E12A3AEA22A655BA00044FFC /* TDInterstitialViewDemoVC.swift */,
 				042BC1EF22A25AA500F28645 /* Main.storyboard */,
 				042BC1F222A25AA700F28645 /* Assets.xcassets */,
@@ -238,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				042BC1EE22A25AA500F28645 /* ViewController.swift in Sources */,
+				045FAEC522A7B9CF001F5DCE /* TDMutiCustomView.swift in Sources */,
 				E12A3AEB22A655BA00044FFC /* TDInterstitialViewDemoVC.swift in Sources */,
 				042BC20222A27AFD00F28645 /* TDBannerViewDemoVC.swift in Sources */,
 				042BC20422A27B0C00F28645 /* TDCustomViewDemo.swift in Sources */,
