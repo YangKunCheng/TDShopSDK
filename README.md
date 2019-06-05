@@ -111,13 +111,13 @@ override func viewWillAppear(_ animated: Bool) {
 
 ### 6.Config local push server.
 
-#### 第一步： register local push server
+#### Step1： register local push server
 ```
 if #available(iOS 10.0, *) {
     UNUserNotificationCenter.current().delegate = self
 }
 ```
-#### 第二步： handle when recieve local push notification（SDK will push some local push notification for the right time.）
+#### Step2： handle when recieve local push notification（SDK will push some local push notification for the right time.）
 ```
 @available(iOS 10.0, *)
 func userNotificationCenter(_ center: UNUserNotificationCenter,
