@@ -48,8 +48,10 @@ class TDMutiCustomView: TDCustomView,UIScrollViewDelegate {
             pageCtrl.isHidden = true
         }
         
+        
         var x:CGFloat = 0
         var index = 0
+        
         for adInfo in resources {
             
             let contentView = UIView.init(frame: CGRect.init(x: x, y: 0, width: width, height: height))

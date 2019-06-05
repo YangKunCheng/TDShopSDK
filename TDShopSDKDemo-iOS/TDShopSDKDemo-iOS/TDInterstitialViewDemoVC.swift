@@ -23,7 +23,7 @@ class TDInterstitialViewDemoVC: UIViewController {
         view.backgroundColor = UIColor.white
         let showInterBtn = UIButton()
         showInterBtn.setTitle("Show nterstitial View", for: .normal)
-        showInterBtn.backgroundColor = UIColor.lightGray
+        showInterBtn.backgroundColor = UIColor.orange
         showInterBtn.setTitleColor(UIColor.white, for: .normal)
         showInterBtn.addTarget(self, action: #selector(showInterBtnClick), for: .touchUpInside)
         self.view.addSubview(showInterBtn)
@@ -34,6 +34,7 @@ class TDInterstitialViewDemoVC: UIViewController {
     }
     
     @objc func showInterBtnClick() {
-        _ = TDShopSDK.showInterstitialView(placementId: "myshop_ios_demo_interstitialr_001")
+        //如果 SDK未初始化，图片没加载完毕或者没有这个id则会返回失败
+        let showSuccess = TDShopSDK.showInterstitialView(placementId: "myshop_ios_demo_interstitialr_001")
     }
 }
