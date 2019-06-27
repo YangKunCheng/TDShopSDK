@@ -54,7 +54,6 @@ class TDBannerViewDemoVC: UIViewController {
         
         let customFixedIconView =  TDCustomBannerView.init(frame: CGRect.init(x:(screenW-viewW)/2, y: currY, width: viewW+15, height: viewH+15))
         scrollView.addSubview(customFixedIconView)
-        customFixedIconView.handleWhenViewAppear()
         
         currY += viewH + 15 + space
         // Temple Entrance

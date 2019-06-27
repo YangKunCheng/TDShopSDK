@@ -211,7 +211,6 @@ SWIFT_CLASS("_TtC9TDShopSDK8TDConfig")
 SWIFT_CLASS("_TtC9TDShopSDK12TDCustomView")
 @interface TDCustomView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)didMoveToSuperview;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 

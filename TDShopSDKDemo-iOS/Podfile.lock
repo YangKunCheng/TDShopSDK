@@ -5,7 +5,7 @@ PODS:
     - SDWebImage/Core (= 5.0.6)
   - SDWebImage/Core (5.0.6)
   - SnapKit (5.0.0)
-  - TDShopSDK (1.0.6):
+  - TDShopSDK (1.0.9):
     - Alamofire (~> 4.8.0)
     - Bugsnag
     - SDWebImage (~> 5.0)
@@ -27,7 +27,7 @@ SPEC CHECKSUMS:
   Bugsnag: 3e9e2b563f1e99ce447de123c65e851bd109fa9f
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
-  TDShopSDK: d3b2077946c8058b6d136d8381c279fe0b02eb10
+  TDShopSDK: bc830128b40c99e77c862bab4fc1b9c3f61f1bd3
 
 PODFILE CHECKSUM: 720e87510f14a130a903d53a3fbaf6b7e1bda71e
 

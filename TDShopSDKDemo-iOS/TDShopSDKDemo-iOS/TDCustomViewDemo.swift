@@ -46,7 +46,7 @@ class TDCustomViewDemo: UIViewController {
         }
 
         randomCustomView = TDRandomCustomView.init(viewId: placementId, tags: tags, timeInterval: 10)
-        
+    
         
     }
     
