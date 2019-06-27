@@ -46,7 +46,6 @@ class TDIconViewDemoVC: UIViewController {
         // Fixed Entrance
         let fixedIconView =  TDIconView.init(frame: CGRect.init(x:(screenW-viewWH)/2, y: currY, width: viewWH, height: viewWH), viewId: "myshop_ios_demo_icon_001")
         scrollView.addSubview(fixedIconView)
-        fixedIconView.handleWhenViewAppear()
         
         currY += viewWH + space
         // Custom Fixed Entrance
@@ -58,7 +57,6 @@ class TDIconViewDemoVC: UIViewController {
         
         let customFixedIconView =  TDCustomIconView.init(frame: CGRect.init(x:(screenW-viewWH)/2, y: currY, width: viewWH+15, height: viewWH+15))
         scrollView.addSubview(customFixedIconView)
-        customFixedIconView.handleWhenViewAppear()
         
         currY += viewWH+15 + space
         // Temple Entrance
@@ -75,7 +73,6 @@ class TDIconViewDemoVC: UIViewController {
         
         let templeIconView =  TDIconView.init(frame: CGRect.init(x:(screenW-viewWH)/2, y: currY, width: viewWH, height: viewWH), viewId: "myshop_ios_demo_icon_001")
         scrollView.addSubview(templeIconView)
-        templeIconView.handleWhenViewAppear()
         templeIconView.isHidden = true
         self.templeIconView = templeIconView
     }
@@ -121,10 +118,6 @@ class TDCustomIconView: UIView {
         closeBtn.setImage(UIImage.init(named: "close"), for: .normal)
         closeBtn.addTarget(self, action: #selector(closeBtnClick), for: .touchUpInside)
         addSubview(closeBtn)
-    }
-    
-    func handleWhenViewAppear() {
-        fixedIconView.handleWhenViewAppear()
     }
     
     @objc func closeBtnClick() {

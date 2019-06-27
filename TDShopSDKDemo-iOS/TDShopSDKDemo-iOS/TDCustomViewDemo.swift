@@ -31,7 +31,6 @@ class TDCustomViewDemo: UIViewController {
             self.view.addSubview(customView)
            customView.frame = CGRect.init(x: 10, y: 200, width: UIScreen.main.bounds.size.width-20, height: 100)
             customView.setupView(resources: resources)
-            customView.handleWhenViewAppear()
         }
         
         let randomCustomViewBtn = UIButton()

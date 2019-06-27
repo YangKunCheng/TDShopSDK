@@ -43,7 +43,6 @@ class TDBannerViewDemoVC: UIViewController {
         // Fixed Entrance
         let fixedBannerView =  TDBannerView(frame: CGRect(x: (screenW-viewW)/2, y: currY, width: viewW, height: viewH), viewId: "myshop_ios_demo_banner_001")
         scrollView.addSubview(fixedBannerView)
-        fixedBannerView.handleWhenViewAppear()
         
         currY += viewH + space
         // Custom Fixed Entrance
@@ -55,7 +54,6 @@ class TDBannerViewDemoVC: UIViewController {
         
         let customFixedIconView =  TDCustomBannerView.init(frame: CGRect.init(x:(screenW-viewW)/2, y: currY, width: viewW+15, height: viewH+15))
         scrollView.addSubview(customFixedIconView)
-        customFixedIconView.handleWhenViewAppear()
         
         currY += viewH + 15 + space
         // Temple Entrance
@@ -72,7 +70,6 @@ class TDBannerViewDemoVC: UIViewController {
         
         let templeIconView =  TDBannerView.init(frame: CGRect.init(x:(screenW-viewW)/2, y: currY, width: viewW, height: viewH), viewId: "myshop_ios_demo_banner_001")
         scrollView.addSubview(templeIconView)
-        templeIconView.handleWhenViewAppear()
         templeIconView.isHidden = true
         self.templeIconView = templeIconView
     }
@@ -117,10 +114,6 @@ class TDCustomBannerView: UIView {
         closeBtn.setImage(UIImage.init(named: "close"), for: .normal)
         closeBtn.addTarget(self, action: #selector(closeBtnClick), for: .touchUpInside)
         addSubview(closeBtn)
-    }
-    
-    func handleWhenViewAppear() {
-        fixedBannerView.handleWhenViewAppear()
     }
     
     @objc func closeBtnClick() {
