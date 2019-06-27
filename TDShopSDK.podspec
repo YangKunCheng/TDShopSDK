@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TDShopSDK"
-  spec.version      = "1.0.5"
+  spec.version      = "1.0.6"
   spec.summary      = "A short description of TDShopSDK."
 
   spec.description  = <<-DESC 

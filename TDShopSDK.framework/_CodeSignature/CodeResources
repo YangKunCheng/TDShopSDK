@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TDShopSDK-Swift.h</key>
 		<data>
-		zzKU+Ejjtndm5Mt4zsMuRovyGbY=
+		KJy2A0q6vv/uHWu8RVe1yWrUC54=
 		</data>
 		<key>Headers/TDShopSDK.h</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YoLu439o2/yWpqMSfTC9M2+GVwQ=
+		wSKGm5/YlUdk5T0yN2QRVDlyujg=
 		</data>
 		<key>Modules/TDShopSDK.swiftmodule/arm.swiftdoc</key>
 		<data>
-		1k6SKzUZ6O8QcRwRMNgpEJMXiOE=
+		eTJq9MtEVv0NPc4MyWFsl6Ky+kQ=
 		</data>
 		<key>Modules/TDShopSDK.swiftmodule/arm.swiftmodule</key>
 		<data>
-		rnlJ5o1j7Rzhgb8I8wr2okDcnS4=
+		zQJ2OqVq4p1W6ZPNV+XqoqGBuw8=
 		</data>
 		<key>Modules/TDShopSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		Ofmgo0hWeLIk0VjP5/bedtOpIos=
+		J68fTalPOHH4utNfalJUQGsDMEQ=
 		</data>
 		<key>Modules/TDShopSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		zXgsD33alEAOwIW3mZXk7thSEq8=
+		b3wTjS+ClA6Bmpz0+UeCahn7F/k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -56,6 +56,10 @@
 		<data>
 		CNLqR+7Us00G9hdFpRyopBDrSf4=
 		</data>
+		<key>TDResources.bundle/retryButtom.png</key>
+		<data>
+		IpfAn6xQ6hdKCf/1snMRw5dyEBQ=
+		</data>
 		<key>TDResources.bundle/shuaxin.png</key>
 		<data>
 		MBdOfEn440AR0nIH8z0m7reP/eA=
@@ -64,6 +68,14 @@
 		<data>
 		YBQbgG27wmFlcQ9wwq5khgdwjeU=
 		</data>
+		<key>TDResources.bundle/图.png</key>
+		<data>
+		/nbn1MHJOTFhy9/XZRfSwejWfHo=
+		</data>
+		<key>TDResources.bundle/圆角矩形.png</key>
+		<data>
+		vx8HaYPuP7LBUp3Z0R5YTPMFm/Y=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -71,11 +83,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zzKU+Ejjtndm5Mt4zsMuRovyGbY=
+			KJy2A0q6vv/uHWu8RVe1yWrUC54=
 			</data>
 			<key>hash2</key>
 			<data>
-			dkDji4r1+NgWZpBp/9rIJ8x3DWUYjQ0ghEj418Ix/dM=
+			HBHYMf6OvcxCf2ZypEWYyoE6VzIPOioC2nTvIaExFIs=
 			</data>
 		</dict>
 		<key>Headers/TDShopSDK.h</key>
@@ -93,44 +105,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1k6SKzUZ6O8QcRwRMNgpEJMXiOE=
+			eTJq9MtEVv0NPc4MyWFsl6Ky+kQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			E42Qps5n15y+WyChyZiq09WAY4s/7u70KSL7gyQQfzs=
+			bOSXgIzsjTUA0CjVsYZei9zeQA/Zta/nICib6xA2DM4=
 			</data>
 		</dict>
 		<key>Modules/TDShopSDK.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rnlJ5o1j7Rzhgb8I8wr2okDcnS4=
+			zQJ2OqVq4p1W6ZPNV+XqoqGBuw8=
 			</data>
 			<key>hash2</key>
 			<data>
-			+/SGf8eiSPZuETOazqYTRXfPkeK10VisJ6F7SdSLoHo=
+			KbNSlCKA37+Bu6BOAPgPXnCnyKJQhU+0O+pJpjZUa34=
 			</data>
 		</dict>
 		<key>Modules/TDShopSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ofmgo0hWeLIk0VjP5/bedtOpIos=
+			J68fTalPOHH4utNfalJUQGsDMEQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			Dvx6MCGT3EyXlFXkXx1G2PjdPP3brF9eaLUCiFr+Er8=
+			NhL/P8yddmAtVrAop4nxj7vNU0rB7S/ju8+LiuThjHc=
 			</data>
 		</dict>
 		<key>Modules/TDShopSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zXgsD33alEAOwIW3mZXk7thSEq8=
+			b3wTjS+ClA6Bmpz0+UeCahn7F/k=
 			</data>
 			<key>hash2</key>
 			<data>
-			qBE8EURVY6YBfGF78FR5vCbrT0EsR1iOWQYZ8D7nS0s=
+			FYIY/X+Rs/pBj3neWM/HtS0jTzvfQeXBZfPDzWgyrE0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -199,6 +211,17 @@
 			IyXTyjQXjh3jJ83giHB4dVVAE5hoCSYQK0gsCcHocLA=
 			</data>
 		</dict>
+		<key>TDResources.bundle/retryButtom.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IpfAn6xQ6hdKCf/1snMRw5dyEBQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			XwPEbH5fQHe8y2PlKdIP8gInfuWB5dsR6sW8y2MwJUU=
+			</data>
+		</dict>
 		<key>TDResources.bundle/shuaxin.png</key>
 		<dict>
 			<key>hash</key>
@@ -219,6 +242,28 @@
 			<key>hash2</key>
 			<data>
 			2IB0ThxT6r9HJpxSawpfDQg8gMM8pB+t0D6q76FG6zs=
+			</data>
+		</dict>
+		<key>TDResources.bundle/图.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/nbn1MHJOTFhy9/XZRfSwejWfHo=
+			</data>
+			<key>hash2</key>
+			<data>
+			JxZo+HSMsa40ZXTXAqLm8FgZKHzDXOBUXsuZH7MLEx0=
+			</data>
+		</dict>
+		<key>TDResources.bundle/圆角矩形.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vx8HaYPuP7LBUp3Z0R5YTPMFm/Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			LriFHA3u7YLybS6q2u12ipZ2X5v25RWg0K+54xbuaEM=
 			</data>
 		</dict>
 	</dict>
