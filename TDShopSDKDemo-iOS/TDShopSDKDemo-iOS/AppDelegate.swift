@@ -9,6 +9,10 @@
 import UIKit
 import TDShopSDK
 
+#if canImport(UserNotifications)
+import UserNotifications
+#endif
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -24,6 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         config.isDebug = true
         TDShopSDK.sdkInitialize(config: config)
+        
+        //iOS10之后设置推送代理，实现代理方法。
+        self.registNoti()
         
         let navi = UINavigationController.init(rootViewController: TDShopSDKDemoListVC())
         self.window?.rootViewController = navi
@@ -49,6 +56,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return canHandleUrl
     }
     
+    
+    
 }
 
+// SDK本地推送
+extension AppDelegate:UNUserNotificationCenterDelegate{
+    
+    
+    func registNoti() {
+        if #available(iOS 10.0, *) {
+            UNUserNotificationCenter.current().delegate = self
+        }
+    }
+    
+    @available(iOS 10.0, *)
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                willPresent notification: UNNotification,
+                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void)
+    {
+        
+        // SDK是否能处理该通知
+        if TDShopSDK.canHandleLocalPushNoti(info: notification.request.content.userInfo) {
+            completionHandler([.alert])
+        }else{
+            // 处理自己APP的逻辑
+            
+        }
+    }
+    @available(iOS 10.0, *)
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        // SDK尝试处理次通知
+        let handle  = TDShopSDK.handleLocalPushNoti(info: response.notification.request.content.userInfo)
+        if !handle {
+            // 处理自己APP的逻辑
+        }
+        completionHandler()
+    }
+    
+
+}
 
