@@ -9,10 +9,6 @@
 import UIKit
 import TDShopSDK
 
-#if canImport(UserNotifications)
-import UserNotifications
-#endif
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
