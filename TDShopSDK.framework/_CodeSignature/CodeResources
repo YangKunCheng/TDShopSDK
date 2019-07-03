@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TDShopSDK-Swift.h</key>
 		<data>
-		NBgMM7zO+SdzVYHZWNjF4UsPLF8=
+		fFfxoIWfpqZrE89/tpEQCzrRUcE=
 		</data>
 		<key>Headers/TDShopSDK.h</key>
 		<data>
@@ -18,19 +18,19 @@
 		</data>
 		<key>Modules/TDShopSDK.swiftmodule/arm.swiftdoc</key>
 		<data>
-		86cvE2kc6Vas3ZYXpcGt5JQioqc=
+		buRSo5YJxqaglKgSsjX5xdLLbhw=
 		</data>
 		<key>Modules/TDShopSDK.swiftmodule/arm.swiftmodule</key>
 		<data>
-		cD9fIq8VWqz/Y45PTtfDuhlgtLA=
+		BPk9JbdlYfbZRA3QLuk0PxTmQQQ=
 		</data>
 		<key>Modules/TDShopSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		5iMSdq/Hb3fnq8oCqvGQpQevm+g=
+		VL/Mr0QBeTruMMSpKARqH08XqBU=
 		</data>
 		<key>Modules/TDShopSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		37jCyoCL20L3RP9Ea2VLsGWcfxk=
+		uS2QMmUrXEX1QaNv0+oDVpjTvo4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,11 +83,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NBgMM7zO+SdzVYHZWNjF4UsPLF8=
+			fFfxoIWfpqZrE89/tpEQCzrRUcE=
 			</data>
 			<key>hash2</key>
 			<data>
-			enSFAUAfRItRIzSsbNvl1jE+015fs7skaHF7ELf+azM=
+			yuN7WrnH4jlLdtkqgdJ1Wcxxypvcl1YP4S8+qYu/gvw=
 			</data>
 		</dict>
 		<key>Headers/TDShopSDK.h</key>
@@ -105,44 +105,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			86cvE2kc6Vas3ZYXpcGt5JQioqc=
+			buRSo5YJxqaglKgSsjX5xdLLbhw=
 			</data>
 			<key>hash2</key>
 			<data>
-			dZWmo3FBVHFbBwrREX8CqD//7+zPa7qztC9GshF8+LM=
+			cbH76pKLM2vlU5qIbkrMbnA7+8rNRbo/M7E9fdDfZmo=
 			</data>
 		</dict>
 		<key>Modules/TDShopSDK.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cD9fIq8VWqz/Y45PTtfDuhlgtLA=
+			BPk9JbdlYfbZRA3QLuk0PxTmQQQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			vxUZvGf4MwRqdw6QkBswLmH+uhPkuKj4pmyzPRg1jR8=
+			lwK1LIif3+O2tVqn2cv0qiSyrYlbCHHJav5q8Y+NZPg=
 			</data>
 		</dict>
 		<key>Modules/TDShopSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5iMSdq/Hb3fnq8oCqvGQpQevm+g=
+			VL/Mr0QBeTruMMSpKARqH08XqBU=
 			</data>
 			<key>hash2</key>
 			<data>
-			PgTtasGEEUuwtkQtc2S7G+kOmZtYw3VAYmveKR5TE8U=
+			VAVK8J8LAgVzm+gKgqDxDMCss1Q1dSCovIAUVsHEFJI=
 			</data>
 		</dict>
 		<key>Modules/TDShopSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			37jCyoCL20L3RP9Ea2VLsGWcfxk=
+			uS2QMmUrXEX1QaNv0+oDVpjTvo4=
 			</data>
 			<key>hash2</key>
 			<data>
-			KtG4PmFqD798ni+i6KaCSfi73vFAb/EOtOmM6e+uKf8=
+			VT/WzzA5M2ZIIbkl9JW7UZSs+sMB4erh1WtMAWcNKbY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
