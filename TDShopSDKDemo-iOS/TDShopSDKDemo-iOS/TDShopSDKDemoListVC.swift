@@ -11,8 +11,7 @@ import SnapKit
 
 enum TDShopSDKDemoType {
     
-    case iconView
-    case bannerView
+    case imageAdView
     case customView
     case interstitialView
 }
@@ -54,8 +53,7 @@ class TDShopSDKDemoListVC: UIViewController {
     
     func initData() {
         
-        let dataArr:[[String:Any]] = [["type":TDShopSDKDemoType.iconView ,"title":"TDIconView","desc":"common"],
-                                      ["type":TDShopSDKDemoType.bannerView ,"title":"TDBannerView","desc":"common"],
+        let dataArr:[[String:Any]] = [["type":TDShopSDKDemoType.imageAdView ,"title":"TDImageAdView","desc":"common"],
                                       ["type":TDShopSDKDemoType.customView ,"title":"TDCustomView","desc":"common"], ["type": TDShopSDKDemoType.interstitialView,"title":"TDInterstitialView","desc": "common"],
             ]
         var demoList = [TDDemoModel]()
@@ -96,10 +94,8 @@ extension TDShopSDKDemoListVC: UITableViewDelegate,UITableViewDataSource {
         var vc:UIViewController?
         
         switch model.type {
-        case .iconView:
-            vc = TDIconViewDemoVC()
-        case .bannerView:
-            vc = TDBannerViewDemoVC()
+        case .imageAdView:
+            vc = TDImageAdViewDemoVC()
         case .customView:
             vc = TDCustomViewDemo()
         case .interstitialView:
@@ -121,7 +117,7 @@ extension TDShopSDKDemoListVC: UITableViewDelegate,UITableViewDataSource {
 
 class TDDemoModel: NSObject {
     
-    var type:TDShopSDKDemoType = .iconView
+    var type:TDShopSDKDemoType = .imageAdView
     var name:String = ""
     var desc:String = ""
 }

@@ -192,14 +192,6 @@ SWIFT_CLASS("_TtC9TDShopSDK18TDAdResourcesModel")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSCoder;
-
-SWIFT_CLASS("_TtC9TDShopSDK12TDBannerView")
-@interface TDBannerView : UIView
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-@end
-
 
 SWIFT_CLASS("_TtC9TDShopSDK8TDConfig")
 @interface TDConfig : NSObject
@@ -207,17 +199,12 @@ SWIFT_CLASS("_TtC9TDShopSDK8TDConfig")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSCoder;
 
 SWIFT_CLASS("_TtC9TDShopSDK12TDCustomView")
 @interface TDCustomView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-@end
-
-
-SWIFT_CLASS("_TtC9TDShopSDK10TDIconView")
-@interface TDIconView : UIView
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)didMoveToSuperview;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 

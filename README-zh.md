@@ -42,35 +42,12 @@ func application(_ app: UIApplication, open url: URL, options: [UIApplication.Op
   
 如果成功SDK会弹出控制器打开谷歌首页
   
-### 3.TDIconView 
-#### TDIconView 需要一个合适的宽高比（宽：高 1:1）
+### 3.TDImageADView 
+#### TDImageADView 需要一个合适的宽高比（宽：高 1:1）
 ```
 let WH:CGFloat = 100
-let iconView = TDIconView.init(frame: CGRect.init(x: 0, y: 0, width: WH, height: WH), viewId: "test_ios_icon_001")
-self.view.addSubview(iconView)
-```
-#### 在viewWillAppear方法里添加如下代码
-```
-override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    self.iconView.handleWhenViewAppear()
-}
-```
-  
-### 4.TDBannerView 
-#### TDBannerView 需要一个合适的宽高比（宽：高 720:372）
-```
-let W:CGFloat = 300
-let H:CGFloat = W * 372/720.0
-let bannerView = TDBannerView.init(frame: CGRect.init(x: 0, y: 0, width: W, height: H), viewId: "test_ios_banner_001")
-self.view.addSubview(bannerView)
-```
-#### 在viewWillAppear方法里添加如下代码
-```
-override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    self.bannerView.handleWhenViewAppear()
-}
+let imageAdView = TDImageADView.init(frame: CGRect.init(x: 0, y: 0, width: WH, height: WH), viewId: "test_ios_icon_001")
+self.view.addSubview(imageAdView)
 ```
 
 ### 5.TDCustomView 
@@ -101,57 +78,3 @@ TDShopSDK.getAdResourcesInfo(placementId: "placementId", tags: ["hat"]) { (resou
   self.view.addSubview(self.customView!)
 }
 ```
-#### 3.在viewWillAppear方法里添加如下代码
-```
-override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    self.customView?.handleWhenViewAppear()
-}
-```
-
-### 6.本地推送配置
-
-#### 第一步： 注册推送服务
-```
-if #available(iOS 10.0, *) {
-    UNUserNotificationCenter.current().delegate = self
-}
-```
-#### 第二步： 处理本地推送消息（SDK会在适当的时机给用户推送消息）
-```
-@available(iOS 10.0, *)
-func userNotificationCenter(_ center: UNUserNotificationCenter,
-                                willPresent notification: UNNotification,
-                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void)
-{
-    if TDShopSDK.canHandleLocalPushNoti(info: notification.request.content.userInfo) {
-        completionHandler([.alert])
-    }
-}
-@available(iOS 10.0, *)
-func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-  TDShopSDK.handleLocalPushNoti(info: response.notification.request.content.userInfo)
-  completionHandler()
-}
-
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

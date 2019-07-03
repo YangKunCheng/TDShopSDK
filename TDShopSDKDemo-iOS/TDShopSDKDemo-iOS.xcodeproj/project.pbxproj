@@ -13,8 +13,7 @@
 		042BC1F322A25AA700F28645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042BC1F222A25AA700F28645 /* Assets.xcassets */; };
 		042BC1F622A25AA700F28645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042BC1F422A25AA700F28645 /* LaunchScreen.storyboard */; };
 		042BC1FE22A25AEA00F28645 /* TDShopSDKDemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BC1FD22A25AEA00F28645 /* TDShopSDKDemoListVC.swift */; };
-		042BC20022A27AE900F28645 /* TDIconViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BC1FF22A27AE900F28645 /* TDIconViewDemoVC.swift */; };
-		042BC20222A27AFD00F28645 /* TDBannerViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BC20122A27AFD00F28645 /* TDBannerViewDemoVC.swift */; };
+		042BC20022A27AE900F28645 /* TDImageAdViewDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BC1FF22A27AE900F28645 /* TDImageAdViewDemoVC.swift */; };
 		042BC20422A27B0C00F28645 /* TDCustomViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BC20322A27B0C00F28645 /* TDCustomViewDemo.swift */; };
 		045FAEC522A7B9CF001F5DCE /* TDMutiCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FAEC422A7B9CF001F5DCE /* TDMutiCustomView.swift */; };
 		045FAEC722A7DB40001F5DCE /* TDRandomCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FAEC622A7DB40001F5DCE /* TDRandomCustomView.swift */; };
@@ -31,8 +30,7 @@
 		042BC1F522A25AA700F28645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		042BC1F722A25AA700F28645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		042BC1FD22A25AEA00F28645 /* TDShopSDKDemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDShopSDKDemoListVC.swift; sourceTree = "<group>"; };
-		042BC1FF22A27AE900F28645 /* TDIconViewDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDIconViewDemoVC.swift; sourceTree = "<group>"; };
-		042BC20122A27AFD00F28645 /* TDBannerViewDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDBannerViewDemoVC.swift; sourceTree = "<group>"; };
+		042BC1FF22A27AE900F28645 /* TDImageAdViewDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDImageAdViewDemoVC.swift; sourceTree = "<group>"; };
 		042BC20322A27B0C00F28645 /* TDCustomViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDCustomViewDemo.swift; sourceTree = "<group>"; };
 		045FAEC422A7B9CF001F5DCE /* TDMutiCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDMutiCustomView.swift; sourceTree = "<group>"; };
 		045FAEC622A7DB40001F5DCE /* TDRandomCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDRandomCustomView.swift; sourceTree = "<group>"; };
@@ -78,8 +76,7 @@
 				042BC1EB22A25AA500F28645 /* AppDelegate.swift */,
 				042BC1ED22A25AA500F28645 /* ViewController.swift */,
 				042BC1FD22A25AEA00F28645 /* TDShopSDKDemoListVC.swift */,
-				042BC1FF22A27AE900F28645 /* TDIconViewDemoVC.swift */,
-				042BC20122A27AFD00F28645 /* TDBannerViewDemoVC.swift */,
+				042BC1FF22A27AE900F28645 /* TDImageAdViewDemoVC.swift */,
 				042BC20322A27B0C00F28645 /* TDCustomViewDemo.swift */,
 				045FAEC422A7B9CF001F5DCE /* TDMutiCustomView.swift */,
 				045FAEC622A7DB40001F5DCE /* TDRandomCustomView.swift */,
@@ -247,11 +244,10 @@
 				045FAEC522A7B9CF001F5DCE /* TDMutiCustomView.swift in Sources */,
 				045FAEC722A7DB40001F5DCE /* TDRandomCustomView.swift in Sources */,
 				E12A3AEB22A655BA00044FFC /* TDInterstitialViewDemoVC.swift in Sources */,
-				042BC20222A27AFD00F28645 /* TDBannerViewDemoVC.swift in Sources */,
 				042BC20422A27B0C00F28645 /* TDCustomViewDemo.swift in Sources */,
 				042BC1EC22A25AA500F28645 /* AppDelegate.swift in Sources */,
 				042BC1FE22A25AEA00F28645 /* TDShopSDKDemoListVC.swift in Sources */,
-				042BC20022A27AE900F28645 /* TDIconViewDemoVC.swift in Sources */,
+				042BC20022A27AE900F28645 /* TDImageAdViewDemoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

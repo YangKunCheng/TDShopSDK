@@ -1,5 +1,5 @@
 //
-//  TDBannerViewDemoVC.swift
+//  TDIconViewDemoVC.swift
 //  TDShopSDKDemo-iOS
 //
 //  Created by mac on 2019/6/1.
@@ -8,17 +8,20 @@
 
 import UIKit
 import TDShopSDK
+class TDImageAdViewDemoVC: UIViewController {
 
-class TDBannerViewDemoVC: UIViewController {
-
-    var templeIconView:TDBannerView!
+    
+    var templeImageAdView:TDImageADView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.initSubViews()
+        
     }
     
     func initSubViews() {
+        
+        
         let scrollView = UIScrollView.init(frame: CGRect.zero)
         scrollView.backgroundColor = .groupTableViewBackground
         self.view.addSubview(scrollView)
@@ -26,36 +29,36 @@ class TDBannerViewDemoVC: UIViewController {
             make.edges.equalToSuperview()
         }
         
+        
         var currY:CGFloat = 40
         let leadingLeft:CGFloat = 15
         let titleLbH:CGFloat = 25
         let space:CGFloat = 20
         let screenW:CGFloat = UIScreen.main.bounds.size.width
         let screenH:CGFloat = UIScreen.main.bounds.size.height
-        let viewH:CGFloat = 50
-        let viewW:CGFloat = viewH * 720.0/372
         
+        let viewWH:CGFloat = 50
         let fixedLb = UILabel.init(frame: CGRect.init(x: leadingLeft, y: currY, width: 150, height: titleLbH))
         fixedLb.text = "Fixed Entrance:"
         scrollView.addSubview(fixedLb)
         
         currY += titleLbH + space
         // Fixed Entrance
-        let fixedBannerView =  TDBannerView(frame: CGRect(x: (screenW-viewW)/2, y: currY, width: viewW, height: viewH), viewId: "myshop_ios_demo_banner_001")
-        scrollView.addSubview(fixedBannerView)
+        let fixedImageAdView =  TDImageADView.init(frame: CGRect.init(x:(screenW-viewWH)/2, y: currY, width: viewWH, height: viewWH), viewId: "myshop_ios_demo_icon_001")
+        scrollView.addSubview(fixedImageAdView)
         
-        currY += viewH + space
+        currY += viewWH + space
         // Custom Fixed Entrance
         let customFixedLb = UILabel.init(frame: CGRect.init(x: leadingLeft, y: currY, width: 200, height: titleLbH))
         customFixedLb.text = "Custom Fixed Entrance:"
         scrollView.addSubview(customFixedLb)
         
-        currY += titleLbH + space
+         currY += titleLbH + space
         
-        let customFixedIconView =  TDCustomBannerView.init(frame: CGRect.init(x:(screenW-viewW)/2, y: currY, width: viewW+15, height: viewH+15))
-        scrollView.addSubview(customFixedIconView)
+        let customFixedImageAdView =  TDCustomImageAdView.init(frame: CGRect.init(x:(screenW-viewWH)/2, y: currY, width: viewWH+15, height: viewWH+15))
+        scrollView.addSubview(customFixedImageAdView)
         
-        currY += viewH + 15 + space
+        currY += viewWH+15 + space
         // Temple Entrance
         let templeLb = UILabel.init(frame: CGRect.init(x: leadingLeft, y: currY, width: 150, height: titleLbH))
         templeLb.text = "Temple Entrance:"
@@ -68,28 +71,30 @@ class TDBannerViewDemoVC: UIViewController {
         scrollView.addSubview(showTempleBtn)
         currY += titleLbH + space
         
-        let templeIconView =  TDBannerView.init(frame: CGRect.init(x:(screenW-viewW)/2, y: currY, width: viewW, height: viewH), viewId: "myshop_ios_demo_banner_001")
-        scrollView.addSubview(templeIconView)
-        templeIconView.isHidden = true
-        self.templeIconView = templeIconView
+        let templeImageAdView =  TDImageADView.init(frame: CGRect.init(x:(screenW-viewWH)/2, y: currY, width: viewWH, height: viewWH), viewId: "myshop_ios_demo_icon_001")
+        scrollView.addSubview(templeImageAdView)
+        templeImageAdView.isHidden = true
+        self.templeImageAdView = templeImageAdView
     }
     
     @objc func showTempleBtnClick() {
         
-        if templeIconView.isHidden == false {
+        if templeImageAdView.isHidden == false {
             return
         }
-        templeIconView.isHidden = false
+        templeImageAdView.isHidden = false
         DispatchQueue.main.asyncAfter(deadline: .now()+3, execute:
             {[weak self] in
-                self?.templeIconView.isHidden = true
+                self?.templeImageAdView.isHidden = true
         })
     }
+
 }
 
-class TDCustomBannerView: UIView {
+
+class TDCustomImageAdView: UIView {
     
-    var fixedBannerView:TDBannerView!
+    var fixedImageAdView:TDImageADView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -100,13 +105,12 @@ class TDCustomBannerView: UIView {
     func initSubViews() {
         
         let closeBtnWH:CGFloat = 15
-        let viewH:CGFloat = 50
-        let viewW:CGFloat = viewH * 720.0/372
-        let fixBannerViewWH = self.bounds.size.width-closeBtnWH
-        fixedBannerView =  TDBannerView(frame: CGRect(x: 0, y: closeBtnWH, width: viewW, height: viewH), viewId: "myshop_ios_demo_banner_001")
-        addSubview(fixedBannerView)
         
-        let closeBtn = UIButton.init(frame: CGRect.init(x: fixBannerViewWH, y: 0, width: closeBtnWH, height: closeBtnWH))
+        let fixIconViewWH = self.bounds.size.width-closeBtnWH
+        fixedImageAdView =  TDImageADView.init(frame: CGRect.init(x:0, y: closeBtnWH, width: fixIconViewWH, height: fixIconViewWH), viewId: "myshop_ios_demo_icon_001")
+        addSubview(fixedImageAdView)
+        
+        let closeBtn = UIButton.init(frame: CGRect.init(x: fixIconViewWH, y: 0, width: closeBtnWH, height: closeBtnWH))
         closeBtn.layer.cornerRadius = closeBtnWH/2
         closeBtn.layer.borderColor = UIColor.black.cgColor
         closeBtn.layer.borderWidth = 0.5

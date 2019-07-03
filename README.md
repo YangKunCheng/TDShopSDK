@@ -42,37 +42,15 @@ func application(_ app: UIApplication, open url: URL, options: [UIApplication.Op
 
 SDK will open a ViewController witch show the google page , if success!
 
-### 3.TDIconView 
-#### TDIconView need a  Appropriate ratio (width:height 1:1)
+### 3.TDImageADView 
+#### TDImageADView need a  Appropriate ratio (width:height 1:1)
 ```
 let WH:CGFloat = 100
-let iconView = TDIconView.init(frame: CGRect.init(x: 0, y: 0, width: WH, height: WH), viewId: "test_ios_icon_001")
-self.view.addSubview(iconView)
-```
-#### Add the following code in viewWillAppear
-```
-override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    self.iconView.handleWhenViewAppear()
-}
+let imageAdView = TDImageADView.init(frame: CGRect.init(x: 0, y: 0, width: WH, height: WH), viewId: "test_ios_icon_001")
+self.view.addSubview(imageAdView)
 ```
 
-### 4.TDBannerView 
-#### TDBannerView need a  Appropriate ratio (width:height 720:372)
-```
-let W:CGFloat = 300
-let H:CGFloat = W * 372/720.0
-let bannerView = TDBannerView.init(frame: CGRect.init(x: 0, y: 0, width: W, height: H), viewId: "test_ios_banner_001")
-self.view.addSubview(bannerView)
-```
-#### Add the following code in viewWillAppear
-```
-override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    self.bannerView.handleWhenViewAppear()
-}
-```
-### 5.TDCustomView 
+### 4.TDCustomView 
 #### 1.create a subclass of TDCustomView.
 ```
 class CustomView: TDCustomView {
@@ -99,39 +77,4 @@ TDShopSDK.getAdResourcesInfo(placementId: "placementId", tags: ["hat"]) { (resou
   self.customView?.handleWhenViewAppear()
   self.view.addSubview(self.customView!)
 }
-```
-#### 3.Call handleWhenViewAppear when view appear
-```
-override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    self.customView?.handleWhenViewAppear()
-}
-
-```
-
-### 6.Config local push server.
-
-#### Step1： register local push server
-```
-if #available(iOS 10.0, *) {
-    UNUserNotificationCenter.current().delegate = self
-}
-```
-#### Step2： handle when recieve local push notification（SDK will push some local push notification for the right time.）
-```
-@available(iOS 10.0, *)
-func userNotificationCenter(_ center: UNUserNotificationCenter,
-                                willPresent notification: UNNotification,
-                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void)
-{
-    if TDShopSDK.canHandleLocalPushNoti(info: notification.request.content.userInfo) {
-        completionHandler([.alert])
-    }
-}
-@available(iOS 10.0, *)
-func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-  TDShopSDK.handleLocalPushNoti(info: response.notification.request.content.userInfo)
-  completionHandler()
-}
-
 ```
